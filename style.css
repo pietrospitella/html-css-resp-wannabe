@@ -72,7 +72,9 @@ img {
   clear: both;
 }
 
-@media (max-width: 420px) {
+/* MEDIA QUERY */
+
+@media (max-width: 419px) {
  
   body {
     background-color: #F2F2CD;
@@ -108,3 +110,45 @@ img {
     background-color: #F2F2CD;
   }
 }
+
+/* bonus */
+
+@media (min-width: 420px) and (max-width: 768px) {
+  
+  body {
+    background-color: #444444;
+    color: white;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+  }
+
+  .row, #why .row>.first, #why .row>.second, #why .row>.third {
+    margin: 0;
+  }
+
+  #lezioni .row>.left, #lezioni .row>.right, #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    width: auto;
+  }
+
+  h3 {
+    margin: 0;
+  }  
+
+  img {
+    height: 150px;
+  }
+
+  #why, #steps {
+    background-color: #444444;
+  }
+}
+
+/* / bonus */
